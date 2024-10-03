@@ -5,16 +5,16 @@ Tutorial on using machine learning for acoustics. This tutorial covers a wide ra
 
 # Tutorial Breakdown
 
-Signal Processing - Ryan
+~~Signal Processing - Ryan~~
 
 Feature Extraction - Ryan
 
 # Basics
 Here we can put Regression, Classification, etc.
 
-Linear Regression - Neil
+~~Linear Regression - Neil~~
 
-Decision Tree - Ryan
+~~Decision Tree/Random Forest - Ryan~~
 
 Neural Network/CNN - Neil
 
