@@ -3,6 +3,8 @@ Tutorial on using machine learning for acoustics. This tutorial covers a wide ra
 
 # Background
 
+How to install/requirements - Ryan
+
 # Tutorial Breakdown
 
 ~~Signal Processing - Ryan~~
