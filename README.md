@@ -25,15 +25,13 @@ SVM - Neil
 # Unsupervised Learning
 Here we can put KNNs, PCA, Hierarchial, autoencoders, etc.
 
-Knn - Ryan
+K-Nearest Neighbor/Gaussian Mixture Model - Ryan
 
 Autoencoders/Variational Autoencoder - Neil
 
 PCA/EOF - Ryan
 
 Dictionary Learning - Samuel
-
-Hierarchial - Ryan
 
 # Deep Learning
 Here we can put PINNs, NN, GANs, etc.
