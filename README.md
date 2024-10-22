@@ -44,4 +44,10 @@ Implicit Neural Representation (Neural Field) - Neil
 
 ## Dataset Webpages
 https://fishsounds.net/how-to-cite.js
+
 https://www.kaggle.com/datasets?search=audio
+
+
+## Reference
+[PyTorch Tutorial](https://github.com/yunjey/pytorch-tutorial/tree/master)
+
