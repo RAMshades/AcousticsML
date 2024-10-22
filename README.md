@@ -9,7 +9,7 @@ How to install/requirements - Ryan
 
 ~~Signal Processing - Ryan~~
 
-Feature Extraction - Ryan
+~~ Feature Extraction - Ryan ~~
 
 # Basics
 Here we can put Regression, Classification, etc.
