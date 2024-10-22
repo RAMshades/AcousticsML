@@ -18,7 +18,7 @@ Here we can put Regression, Classification, etc.
 
 ~~Decision Tree/Random Forest - Ryan~~
 
-Neural Network/CNN - Neil
+~~Logistic Regression/Neural Network/CNN - Neil~~
 
 SVM - Neil
 
@@ -39,6 +39,8 @@ Here we can put PINNs, NN, GANs, etc.
 PINN - Samuel
 
 GAN - Neil
+
+Implicit Neural Representation (Neural Field) - Neil
 
 ## Dataset Webpages
 https://fishsounds.net/how-to-cite.js
