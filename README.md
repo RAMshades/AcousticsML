@@ -1,6 +1,15 @@
 # AcousticsML
 Tutorial on using machine learning for acoustics. This tutorial covers a wide range of machine learning approaches for acoustic applications including supervised, unsupervised, and deep learning. 
 
+## Installation 
+In order to follow along the examples, you will need to download a few packages. 
+
+<html>
+  <body>
+    <p>Let’s keep it as a code block and not render it for once</p>
+  </body>
+</html>
+
 # Background
 
 How to install/requirements - Ryan
