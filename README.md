@@ -5,7 +5,7 @@ Tutorial on using machine learning for acoustics. This tutorial covers a wide ra
 In order to follow along the examples, you will need to download a few packages. 
 
 ```python
-print 'bar'
+conda install
 ```
 
 # Background
