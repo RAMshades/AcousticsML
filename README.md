@@ -4,11 +4,9 @@ Tutorial on using machine learning for acoustics. This tutorial covers a wide ra
 ## Installation 
 In order to follow along the examples, you will need to download a few packages. 
 
-<html>
-  <body>
-    <p>Let’s keep it as a code block and not render it for once</p>
-  </body>
-</html>
+```python
+print 'bar'
+```
 
 # Background
 
