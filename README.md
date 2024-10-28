@@ -1,4 +1,5 @@
 # AcousticsML
+Acoustics research offers many insights toward 
 Tutorial on using machine learning for acoustics. This tutorial covers a wide range of machine learning approaches for acoustic applications including supervised, unsupervised, and deep learning. 
 
 ## Installation 
@@ -7,6 +8,16 @@ In order to follow along the examples, you will need to download a few packages.
 ```python
 conda install
 ```
+
+# Chapter 1 
+## Background Signal Processing
+[notebook](Introduction_Signal_Processing.ipynb)
+
+## 
+
+# Chapter 2
+
+# Chapter 3
 
 # Background
 
