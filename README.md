@@ -6,18 +6,39 @@ Tutorial on using machine learning for acoustics. This tutorial covers a wide ra
 In order to follow along the examples, you will need to download a few packages. 
 
 ```python
+conda create 
 conda install
 ```
 
-# Chapter 1 
+# Chapter 1 - Signal Processing and Acoustics toward Machine Learning
 ## Background Signal Processing
-[notebook](Introduction_Signal_Processing.ipynb)
+[Introduction to Signal Processing](Introduction_Signal_Processing.ipynb)
+
+## Feature Extraction
+[Feature Extraction](FeatureExtraction.ipynb)
+
+# Chapter 2 - Basic Machine Learning
+## Basic Machine Learning 
 
 ## 
 
-# Chapter 2
+# Chapter 3 - Deep Learning
+## Physics Informed Neural Network
+[Forward Propagation NN](PINNs_forward.ipynb)
 
-# Chapter 3
+## Implicit Neural Representation (Neural Field)
+[Implicit Neural Representation](Implicit Neural Representation -- HRTF representation learning and interpolation.ipynb)
+
+## Generative Adversarial Network
+
+# chapter 4
+## Explainable Artificial intelligence (AI)
+[Explainable AI](Explainable AI.ipynb)
+
+## Feature Selection
+[Feature Selection](FeatureSelection.ipynb)
+
+
 
 # Background
 
