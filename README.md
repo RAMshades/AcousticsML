@@ -1,5 +1,5 @@
 # AcousticsML
-Acoustic data provide scientific and engineering insights in fields ranging from biology and communications to ocean and Earth science. We survey the recent advances and transformative potential of machine learning (ML), including deep learning, in the field of acoustics. ML is a broad family of techniques, which are often based in statistics, for automatically detecting and utilizing patterns in data. We have ML examples from ocean acoustics, room acoustics, and personalized spatial audio for personalized head-related transfer functions modeling in gaming. For room acoustics, we take room impulse responses (RIR) generation as an example application. For personalized spatial audio, we take head-realted transfer function (HRTF) upsampling as examples. This tutorial covers a wide range of machine learning approaches for acoustic applications including supervised, unsupervised, and deep learning. Although this notebook doesn't cover all the topics, it provides an initial look into applying machine learning for acoustics research.
+Acoustic data provide scientific and engineering insights in fields ranging from biology and communications to ocean and Earth science. We survey the recent advances and transformative potential of machine learning (ML), including deep learning, in the field of acoustics. ML is a broad family of techniques, which are often based in statistics, for automatically detecting and utilizing patterns in data. We have ML examples from ocean acoustics, room acoustics, and personalized spatial audio. For room acoustics, we take room impulse responses (RIR) generation as an example application. For personalized spatial audio, we take head-realted transfer function (HRTF) upsampling as examples. This tutorial covers a wide range of machine learning approaches for acoustic applications including supervised, unsupervised, and deep learning. Although this notebook doesn't cover all the topics, it provides an initial look into applying machine learning for acoustics research.
 
 # Installation 
 In order to follow along the examples, you will need to download Anaconda and Python. We have provided a brief outline on how to install Anaconda in [Installation Guide](Python_Installation_instructions.pdf). Once Anaconda has been installed, we will need to create a new environment. This can be done in the conda terminal as: 
@@ -19,81 +19,39 @@ conda install --yes --file requirements. txt
 ```
 
 # Chapters
-The chapters for this repository are ordered as follows: 1) an introduction to signal processing for acoustics; 2) an initial look into feature extraction and selecting features for machine learning models; 3) 
+The chapters for this repository are ordered as follows: 1) an introduction to signal processing for acoustics; 2) an initial look into feature extraction and selecting features for machine learning models; 3) unsupervised machine learning approaches; 4) basic machine learning 
 
 # Chapter 1 - Signal Processing toward Machine Learning
 ## [Introduction to Signal Processing](Introduction_Signal_Processing.ipynb)
 
 # Chapter 2 - Feature Extraction and Selection
-## Feature Extraction
-[Feature Extraction](FeatureExtraction.ipynb)
+## [Feature Extraction](FeatureExtraction.ipynb)
 
-## Feature Selection
-[Feature Selection](FeatureSelection.ipynb)
+## [Feature Selection](FeatureSelection.ipynb)
 
-# Chapter 2 - Basic Machine Learning
-## Basic Machine Learning 
+# Chapter 3 - Unsupervised Learning
+## [Unsupervised Approaches](<Unsupervised Learning -- Long Timeseries.ipynb>)
 
-## 
+## [Principal Component Analysis](<PCA -- Creating Sound.ipynb>)
 
-# Chapter 3 - Deep Learning
-## Physics Informed Neural Network
-[Forward Propagation NN](PINNs_forward.ipynb)
+## [Dictionary Learning](dictionary_learning.ipynb)
 
-## Implicit Neural Representation (Neural Field)
-[Implicit Neural Representation](Implicit Neural Representation -- HRTF representation learning and interpolation.ipynb)
+# Chapter 4 - Basic Machine Learning
+## [Linear Regression](<Linear regression -- Predict the reverberation time.ipynb>)
 
-## Generative Adversarial Network
+## [Decision Tree and Random Forest](<DT_RF -- Number Identification .ipynb>)
 
-# chapter 4
-## Explainable Artificial intelligence (AI)
-[Explainable AI](Explainable AI.ipynb)
+# Chapter 5 - Deep Learning
+## [Neural Representation (HRTF)](<Implicit Neural Representation -- HRTF representation learning and interpolation.ipynb>)
 
-## Feature Selection
-[Feature Selection](FeatureSelection.ipynb)
+## [Neural Network and Convolutional Neural Networks](<LR|NN|CNN -- Audio Classification.ipynb>)
 
+## [Forward Propagation Physics Informed Neural Network](PINNs_forward.ipynb)
+
+# Chapter 6 - Explainable AI
+## [Interpreting Models](<Explainable AI.ipynb>)
 
 
-# Background
-
-How to install/requirements - Ryan
-
-# Tutorial Breakdown
-
-~~Signal Processing - Ryan~~
-
-~~ Feature Extraction - Ryan ~~
-
-# Basics
-Here we can put Regression, Classification, etc.
-
-~~Linear Regression - Neil~~
-
-~~Decision Tree/Random Forest - Ryan~~
-
-~~Logistic Regression/Neural Network/CNN - Neil~~
-
-SVM - Neil
-
-# Unsupervised Learning
-Here we can put KNNs, PCA, Hierarchial, autoencoders, etc.
-
-K-Nearest Neighbor/Gaussian Mixture Model - Ryan
-
-Autoencoders/Variational Autoencoder - Neil
-
-PCA/EOF - Ryan
-
-Dictionary Learning - Samuel
-
-# Deep Learning
-Here we can put PINNs, NN, GANs, etc.
-
-PINN - Samuel
-
-GAN - Neil
-
-Implicit Neural Representation (Neural Field) - Neil
 
 ## Dataset Webpages
 https://fishsounds.net/how-to-cite.js
