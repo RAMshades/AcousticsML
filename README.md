@@ -22,8 +22,7 @@ conda install --yes --file requirements. txt
 The chapters for this repository are ordered as follows: 1) an introduction to signal processing for acoustics; 2) an initial look into feature extraction and selecting features for machine learning models; 3) 
 
 # Chapter 1 - Signal Processing toward Machine Learning
-## Background Signal Processing
-[Introduction to Signal Processing](Introduction_Signal_Processing.ipynb)
+## [Introduction to Signal Processing](Introduction_Signal_Processing.ipynb)
 
 # Chapter 2 - Feature Extraction and Selection
 ## Feature Extraction
