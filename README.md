@@ -1,21 +1,36 @@
 # AcousticsML
-Acoustics research offers many insights toward 
-Tutorial on using machine learning for acoustics. This tutorial covers a wide range of machine learning approaches for acoustic applications including supervised, unsupervised, and deep learning. 
+Acoustic data provide scientific and engineering insights in fields ranging from biology and communications to ocean and Earth science. We survey the recent advances and transformative potential of machine learning (ML), including deep learning, in the field of acoustics. ML is a broad family of techniques, which are often based in statistics, for automatically detecting and utilizing patterns in data. We have ML examples from ocean acoustics, room acoustics, and personalized spatial audio for personalized head-related transfer functions modeling in gaming. For room acoustics, we take room impulse responses (RIR) generation as an example application. For personalized spatial audio, we take head-realted transfer function (HRTF) upsampling as examples. This tutorial covers a wide range of machine learning approaches for acoustic applications including supervised, unsupervised, and deep learning. Although this notebook doesn't cover all the topics, it provides an initial look into applying machine learning for acoustics research.
 
-## Installation 
-In order to follow along the examples, you will need to download a few packages. 
-
+# Installation 
+In order to follow along the examples, you will need to download Anaconda and Python. We have provided a brief outline on how to install Anaconda in [Installation Guide](Python_Installation_instructions.pdf). Once Anaconda has been installed, we will need to create a new environment. This can be done in the conda terminal as: 
 ```python
-conda create 
-conda install
+conda create -n audioenv
 ```
 
-# Chapter 1 - Signal Processing and Acoustics toward Machine Learning
+go ahead and press y when the dialog pops up. Once this is done you will need to go into your environment using:
+```python
+conda activate audioenv
+```
+
+We need to install a few packages in the environment to use the notebooks. This can be done by using the requirements file in the repository. 
+
+```python
+conda install --yes --file requirements. txt
+```
+
+# Chapters
+The chapters for this repository are ordered as follows: 1) an introduction to signal processing for acoustics; 2) an initial look into feature extraction and selecting features for machine learning models; 3) 
+
+# Chapter 1 - Signal Processing toward Machine Learning
 ## Background Signal Processing
 [Introduction to Signal Processing](Introduction_Signal_Processing.ipynb)
 
+# Chapter 2 - Feature Extraction and Selection
 ## Feature Extraction
 [Feature Extraction](FeatureExtraction.ipynb)
+
+## Feature Selection
+[Feature Selection](FeatureSelection.ipynb)
 
 # Chapter 2 - Basic Machine Learning
 ## Basic Machine Learning 
