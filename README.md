@@ -28,7 +28,7 @@ pip install pyroomacoustics
 ```
 
 # Chapters
-The chapters for this repository are ordered as follows: 1) an introduction to signal processing for acoustics; 2) an initial look into feature extraction and selecting features for machine learning models; 3) unsupervised machine learning approaches; 4) basic machine learning 
+The chapters for this repository are ordered as follows: 1) an introduction to signal processing for acoustics; 2) an initial look into feature extraction and selecting features for machine learning models; 3) unsupervised machine learning approaches; 4) supervised machine learning approaches; 5) deep learning models examples; 6) explainable AI and feature importance.
 
 # Chapter 1 - Signal Processing toward Machine Learning
 ## [Introduction to Signal Processing](Introduction_Signal_Processing.ipynb)
@@ -38,7 +38,7 @@ The chapters for this repository are ordered as follows: 1) an introduction to s
 
 ## [Feature Selection](FeatureSelection.ipynb)
 
-# Chapter 3 - Unsupervised Learning
+# Chapter 3 - Unsupervised Machine Learning
 ## [Unsupervised Approaches](<Unsupervised Learning -- Long Timeseries.ipynb>)
 
 ## [Principal Component Analysis](<PCA -- Creating Sound.ipynb>)
