@@ -17,6 +17,9 @@ We need to install a few packages in the environment to use the notebooks. This 
 ```python
 conda install --yes --file requirements. txt
 ```
+```python
+conda env create -f environment.yaml
+```
 
 IF the above packages don't insall, it may be due to PyTorch. To fix this, delete PyTorch, Torchvision, TorchAudio from the .yml and go to [This Website](https://pytorch.org/get-started/locally/) to find the correct package to install. Additionally, you will need the pyroomacoustics package which can be installed through the line below:
 
