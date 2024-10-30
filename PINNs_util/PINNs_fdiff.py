@@ -26,8 +26,8 @@ import numpy as np
 
 def solver(I, V, f, c, Lx, Ly, Nx, Ny, dt, T):
 
-    x = np.linspace(0, Lx, Nx+1)  # Mesh points in x dir
-    y = np.linspace(0, Ly, Ny+1)  # Mesh points in y dir
+    x = np.linspace(0, Lx, Nx)  # Mesh points in x dir
+    y = np.linspace(0, Ly, Ny)  # Mesh points in y dir
     dx = x[1] - x[0]
     dy = y[1] - y[0]
 
@@ -41,8 +41,8 @@ def solver(I, V, f, c, Lx, Ly, Nx, Ny, dt, T):
     elif dt > stability_limit:
         print('error: dt=%g exceeds the stability limit %g' % \
               (dt, stability_limit))
-    Nt = int(round(T/float(dt)))
-    t = np.linspace(0, Nt*dt, Nt+1)    # mesh points in time
+    Nt = int(np.ceil(T/float(dt)))+1
+    t = np.linspace(0, Nt*dt-dt, Nt)    # mesh points in time
     Cx2 = (c*dt/dx)**2;  Cy2 = (c*dt/dy)**2    # help variables
     dt2 = dt**2
 
@@ -53,14 +53,12 @@ def solver(I, V, f, c, Lx, Ly, Nx, Ny, dt, T):
     if V is None or V == 0:
         V = (lambda x, y: np.zeros((x.shape[0], y.shape[1])))
 
-    u     = np.zeros((Nx+1,Ny+1))   # Solution array
-    u_n   = np.zeros((Nx+1,Ny+1))   # Solution at t-dt
-    u_nm1 = np.zeros((Nx+1,Ny+1))   # Solution at t-2*dt
-    u_log = np.zeros((Nx+1,Ny+1,Nt))
+    u     = np.zeros((Nx,Ny))   # Solution array
+    u_n   = np.zeros((Nx,Ny))   # Solution at t-dt
+    u_nm1 = np.zeros((Nx,Ny))   # Solution at t-2*dt
+    u_log = np.zeros((Nx,Ny,Nt))
 
-    Ix = range(0, u.shape[0])
-    Iy = range(0, u.shape[1])
-    It = range(0, t.shape[0])
+    It = range(0, t.shape[0]+1)
 
     # Load initial condition into u_n
     u_n[:,:] = I(x, y)
@@ -84,7 +82,7 @@ def solver(I, V, f, c, Lx, Ly, Nx, Ny, dt, T):
         u_log[:,:,n] = u
         u_nm1, u_n, u = u_n, u, u_nm1
         
-    t = t[0:-1]
+    # t = t[0:-1]
     return u_log, x, y, t, dt
 
 def advance(u, u_n, u_nm1, f_a, Cx2, Cy2, dt2, V=None, step1=False):

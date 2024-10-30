@@ -64,14 +64,6 @@ def plot_estimation(p_ref, p_est, L):
     return ani
 
 def plot_train_log(loss_data_hist, loss_ini_hist, loss_pde_hist, lamb_data_hist, lamb_ini_hist, lamb_pde_hist):
-    for i in range(len(loss_data_hist)):
-        loss_data_hist[i] = loss_data_hist[i].to('cpu').numpy()
-        loss_ini_hist[i] = loss_ini_hist[i].to('cpu').numpy()
-        loss_pde_hist[i] = loss_pde_hist[i].to('cpu').numpy()
-        lamb_data_hist[i] = lamb_data_hist[i].to('cpu').numpy()
-        lamb_ini_hist[i] = lamb_ini_hist[i].to('cpu').numpy()
-        lamb_pde_hist[i] = lamb_pde_hist[i].to('cpu').numpy()
-
     fig, (ax1, ax2) = plt.subplots(1,2, figsize=(8, 3))
     ax1.title.set_text('loss')
     ax1.plot(np.asarray(loss_pde_hist)*np.asarray(lamb_pde_hist)/np.asarray(lamb_data_hist), label="pde loss")
@@ -90,16 +82,6 @@ def plot_train_log(loss_data_hist, loss_ini_hist, loss_pde_hist, lamb_data_hist,
     plt.show()
 
 def plot_train_log_bound(loss_data_hist, loss_ini_hist, loss_pde_hist, loss_bound_hist, lamb_data_hist, lamb_ini_hist, lamb_pde_hist, lamb_bound_hist):
-    for i in range(len(loss_data_hist)):
-        loss_data_hist[i] = loss_data_hist[i].to('cpu').numpy()
-        loss_ini_hist[i] = loss_ini_hist[i].to('cpu').numpy()
-        loss_pde_hist[i] = loss_pde_hist[i].to('cpu').numpy()
-        loss_bound_hist[i] = loss_bound_hist[i].to('cpu').numpy()
-        lamb_data_hist[i] = lamb_data_hist[i].to('cpu').numpy()
-        lamb_ini_hist[i] = lamb_ini_hist[i].to('cpu').numpy()
-        lamb_pde_hist[i] = lamb_pde_hist[i].to('cpu').numpy()
-        lamb_bound_hist[i] = lamb_bound_hist[i].to('cpu').numpy()
-
     fig, (ax1, ax2) = plt.subplots(1,2, figsize=(8, 3))
     ax1.title.set_text('loss')
     ax1.plot(np.asarray(loss_pde_hist)*np.asarray(lamb_pde_hist)/np.asarray(lamb_data_hist), label="pde loss")

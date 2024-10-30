@@ -88,3 +88,23 @@ def xyt_tensor(rxy, t, device):
     r = torch.tensor(r).view(-1,3).requires_grad_(True)
     r = r.to(device)
     return r
+
+def rand_colloc(n_colloc, L, T, device):
+    dims_domain = torch.tensor((L,L,T), device=device)
+    dims_domain = torch.reshape(dims_domain, (1,3))
+    r_colloc = dims_domain*torch.randn((n_colloc,3), device=device).requires_grad_(True)
+    return r_colloc
+
+def rand_bound(id_bound, n_bound, L, T, device):
+    dims_domain = torch.tensor((L,L,T), device=device)
+    dims_domain = torch.reshape(dims_domain, (1,3))
+    r_bound = dims_domain*torch.randn((n_bound,3), device=device).requires_grad_(True)
+    if id_bound == 1:
+        r_bound[:,1] = 0
+    elif id_bound == 2:
+        r_bound[:,1] = L
+    elif id_bound == 3:
+        r_bound[:,0] = 0
+    elif id_bound == 4:
+        r_bound[:,0] = L
+    return r_bound
