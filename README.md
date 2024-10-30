@@ -18,6 +18,12 @@ We need to install a few packages in the environment to use the notebooks. This 
 conda install --yes --file requirements. txt
 ```
 
+IF the above packages don't insall, it may be due to PyTorch. To fix this, delete PyTorch, Torchvision, TorchAudio from the .yml and go to [This Website](https://pytorch.org/get-started/locally/) to find the correct package to install. Additionally, you will need the pyroomacoustics package which can be installed through the line below:
+
+```python
+pip install pyroomacoustics
+```
+
 # Chapters
 The chapters for this repository are ordered as follows: 1) an introduction to signal processing for acoustics; 2) an initial look into feature extraction and selecting features for machine learning models; 3) unsupervised machine learning approaches; 4) basic machine learning 
 
