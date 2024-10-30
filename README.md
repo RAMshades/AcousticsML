@@ -42,7 +42,7 @@ The chapters for this repository are ordered as follows: 1) an introduction to s
 
 ## [Dictionary Learning](dictionary_learning.ipynb)
 
-# Chapter 4 - Basic Machine Learning
+# Chapter 4 - Supervised Machine Learning
 ## [Linear Regression](<Linear regression -- Predict the reverberation time.ipynb>)
 
 ## [Decision Tree and Random Forest](<DT_RF -- Number Identification .ipynb>)
