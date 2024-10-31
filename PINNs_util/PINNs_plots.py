@@ -35,13 +35,13 @@ def plot_data(p_ref, p_data, x_data, y_data, L, T):
     ax2.imshow(p_data.T, vmin = -p_max, vmax = p_max, origin='lower', cmap='seismic', extent=[0,L,0,T])
     plt.show()
 
-def plot_inital_estimation(p_ref, p_est, L):
+def plot_inital_estimation(p_ref, p_est, L, title):
     p_max = np.max(np.abs(p_ref))
     n_L = p_ref.shape[0]
     fig, (ax1, ax2) = plt.subplots(1,2)
     ax1.title.set_text('Initial condition')
     ax1.imshow(p_ref[:,:,0], vmin = -p_max, vmax = p_max, origin='lower', cmap='seismic', extent=[0,L,0,L])
-    ax2.title.set_text('Estimation - no FF')
+    ax2.title.set_text(title)
     ax2.imshow(np.reshape(p_est[:,1], (n_L, n_L)), vmin = -p_max, vmax = p_max, origin='lower', cmap='seismic', extent=[0,L,0,L])
     plt.show()
 
