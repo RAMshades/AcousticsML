@@ -23,16 +23,20 @@ def plot_field(p, L, title):
 
 def plot_data(p_ref, p_data, x_data, y_data, L, T):
     p_max = np.max(np.abs(p_ref))
+    t = np.linspace(0, T, p_data.shape[-1]) 
     fig, (ax1, ax2) = plt.subplots(1, 2)
+    fig.tight_layout()
     ax1.set_title('initial condition')
     ax2.set_title('data')
     ax1.set_ylabel('y')
     ax1.set_xlabel('x')
-    ax2.set_ylabel('time')
-    ax2.set_xlabel('x_receiver')
+    ax2.set_xlabel('time')
     ax1.imshow(p_ref[:,:,0], vmin = -p_max, vmax = p_max, origin='lower', cmap='seismic', extent=[0,L,0,L])
     ax1.scatter(x_data, y_data, s=10, c='black', marker='^')
-    ax2.imshow(p_data.T, vmin = -p_max, vmax = p_max, origin='lower', cmap='seismic', extent=[0,L,0,T])
+    ax2.plot(t, p_data.T)
+    ax2.set_xlim([0, T])
+    asp = np.diff(ax2.get_xlim())[0] / np.diff(ax2.get_ylim())[0]
+    ax2.set_aspect(asp)
     plt.show()
 
 def plot_inital_estimation(p_ref, p_est, L, title):
@@ -63,39 +67,17 @@ def plot_estimation(p_ref, p_est, L):
     plt.close()
     return ani
 
-def plot_train_log(loss_data_hist, loss_ini_hist, loss_pde_hist, lamb_data_hist, lamb_ini_hist, lamb_pde_hist):
+def plot_train_log(loss, lamb, label):
     fig, (ax1, ax2) = plt.subplots(1,2, figsize=(8, 3))
     ax1.title.set_text('loss')
-    ax1.plot(np.asarray(loss_pde_hist)*np.asarray(lamb_pde_hist)/np.asarray(lamb_data_hist), label="pde loss")
-    ax1.plot(np.asarray(loss_ini_hist)*np.asarray(lamb_ini_hist)/np.asarray(lamb_data_hist), label="ic loss")
-    ax1.plot(loss_data_hist, label="data loss")
+    for i in range(len(loss)):
+        ax1.plot(np.asarray(loss[i])*np.asarray(lamb[i])/np.asarray(lamb[0]), label=label[i])
     ax1.legend()
     ax1.set_yscale("log")   
     ax1.set_xlabel("epochs")
     ax2.title.set_text('lambda')
-    ax2.plot(lamb_pde_hist, label="lambda_pde")
-    ax2.plot(lamb_ini_hist, label="lambda_ic")
-    ax2.plot(lamb_data_hist, label="lambda_data")
-    ax2.legend()
-    ax2.set_yscale("log")   
-    ax2.set_xlabel("epochs")
-    plt.show()
-
-def plot_train_log_bound(loss_data_hist, loss_ini_hist, loss_pde_hist, loss_bound_hist, lamb_data_hist, lamb_ini_hist, lamb_pde_hist, lamb_bound_hist):
-    fig, (ax1, ax2) = plt.subplots(1,2, figsize=(8, 3))
-    ax1.title.set_text('loss')
-    ax1.plot(np.asarray(loss_pde_hist)*np.asarray(lamb_pde_hist)/np.asarray(lamb_data_hist), label="pde loss")
-    ax1.plot(np.asarray(loss_ini_hist)*np.asarray(lamb_ini_hist)/np.asarray(lamb_data_hist), label="ic loss")
-    ax1.plot(np.asarray(loss_bound_hist)*np.asarray(lamb_bound_hist)/np.asarray(lamb_data_hist), label="bound loss")
-    ax1.plot(loss_data_hist, label="data loss")
-    ax1.legend()
-    ax1.set_yscale("log")   
-    ax1.set_xlabel("epochs")
-    ax2.title.set_text('lambda')
-    ax2.plot(lamb_pde_hist, label="lambda_pde")
-    ax2.plot(lamb_ini_hist, label="lambda_ic")
-    ax2.plot(lamb_bound_hist, label="lambda_bound")
-    ax2.plot(lamb_data_hist, label="lambda_data")
+    for i in range(len(lamb)):
+        ax2.plot(lamb[i], label=label[i])
     ax2.legend()
     ax2.set_yscale("log")   
     ax2.set_xlabel("epochs")
