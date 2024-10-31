@@ -55,6 +55,8 @@ The chapters for this repository are ordered as follows: 1) an introduction to s
 
 ## [Forward Propagation Physics Informed Neural Network](PINNs_forward.ipynb)
 
+## [Inverse Propagation Physics Informed Neural Network](PINNs_inverse.ipynb)
+
 # Chapter 6 - Explainable AI
 ## [Interpreting Models](<Explainable AI.ipynb>)
 
