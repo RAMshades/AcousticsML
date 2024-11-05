@@ -38,23 +38,6 @@ def pde_residual(p, r, c):
     pde_res = p_xx + p_yy - p_tt/c**2
     return pde_res
 
-def absorbing_boundary(p, r_bound, id_bound, c):
-    p_r = torch.autograd.grad(p, r_bound, torch.ones_like(p), create_graph=True)[0]
-    p_t =  p_r[:,2]
-    if id_bound == 1:
-        p_y = p_r[:,1]
-        res_bound = -p_y + p_t/c
-    elif id_bound == 2:
-        p_y = p_r[:,1]
-        res_bound = p_y + p_t/c
-    elif id_bound == 3:
-        p_x = p_r[:,0]
-        res_bound = -p_x + p_t/c
-    elif id_bound == 4:
-        p_x = p_r[:,0]
-        res_bound = p_x + p_t/c
-    return res_bound
-
 def loss_grad_norm(loss, model):
     loss_grad_norm = 0
     loss_clone = loss.clone()
@@ -94,17 +77,3 @@ def rand_colloc(n_colloc, L, T, device):
     dims_domain = torch.reshape(dims_domain, (1,3))
     r_colloc = dims_domain*torch.randn((n_colloc,3), device=device).requires_grad_(True)
     return r_colloc
-
-def rand_bound(id_bound, n_bound, L, T, device):
-    dims_domain = torch.tensor((L,L,T), device=device)
-    dims_domain = torch.reshape(dims_domain, (1,3))
-    r_bound = dims_domain*torch.randn((n_bound,3), device=device).requires_grad_(True)
-    if id_bound == 1:
-        r_bound[:,1] = 0
-    elif id_bound == 2:
-        r_bound[:,1] = L
-    elif id_bound == 3:
-        r_bound[:,0] = 0
-    elif id_bound == 4:
-        r_bound[:,0] = L
-    return r_bound
