@@ -90,36 +90,13 @@ def plot_speed_log(c_hist, c_ref, L):
     plt.rcParams["animation.html"] = "jshtml"
     plt.ioff()
     frames = []
-    fig, (ax1, ax2) = plt.subplots(1,2)
+    fig, (ax1, ax2) = plt.subplots(1,2, figsize=(6,3))
     ax1.title.set_text('Reference')
     ax2.title.set_text('Estimated')
     for i in range(len(c_hist)):   
         img1 = ax1.imshow(c_ref, vmin = c_min, vmax = c_max, origin='lower', cmap='viridis', extent=[-L/2,L/2,-L/2,L/2], animated=True)
         img2 = ax2.imshow(np.reshape(c_hist[i], (n_L, n_L)), vmin = c_min, vmax = c_max, origin='lower', cmap='viridis', extent=[-L/2,L/2,-L/2,L/2], animated=True)
         frames.append([img1, img2])
-        ani = animation.ArtistAnimation(fig, frames, interval=200, blit=True)
-    plt.close()
-    return ani
-
-def plot_scatter_estimation(p_ref, p_c0, p_scat, L):
-    p_max = np.max(np.abs(p_ref))
-    p_scat = p_scat.reshape(p_ref.shape)
-    p_scat = p_scat.reshape(p_ref.shape)
-    n_T = p_ref.shape[-1]
-    p_total = p_scat + p_c0
-    plt.rcParams["animation.html"] = "jshtml"
-    plt.ioff()
-    frames = []
-    fig, (ax1, ax2, ax3) = plt.subplots(1,3, figsize=(10,3))
-    fig.tight_layout()
-    ax1.title.set_text('Reference')
-    ax2.title.set_text('Estimated scattered')
-    ax3.title.set_text('Estimated total')
-    for i in range(0, n_T):   
-        img1 = ax1.imshow(p_ref[:,:,i], vmin = -p_max, vmax = p_max, origin='lower', cmap='seismic', extent=[-L/2,L/2,-L/2,L/2], animated=True)
-        img2 = ax2.imshow(p_scat[:,:,i], vmin = -p_max, vmax = p_max, origin='lower', cmap='seismic', extent=[-L/2,L/2,-L/2,L/2], animated=True)
-        img3 = ax3.imshow(p_total[:,:,i], vmin = -p_max, vmax = p_max, origin='lower', cmap='seismic', extent=[-L/2,L/2,-L/2,L/2], animated=True)
-        frames.append([img1, img2, img3])
         ani = animation.ArtistAnimation(fig, frames, interval=200, blit=True)
     plt.close()
     return ani

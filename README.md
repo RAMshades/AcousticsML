@@ -42,6 +42,7 @@ The chapters for this repository are ordered as follows: 1) an introduction to s
 ## [Principal Component Analysis](<PCA -- Creating Sound.ipynb>)
 
 ## [Dictionary Learning](dictionary_learning.ipynb)
+Dictionary Learning for the sparse representation of room impulse responses and bandwidth extension. 
 
 # Chapter 4 - Supervised Machine Learning
 ## [Linear Regression](<Linear regression -- Predict the reverberation time.ipynb>)
@@ -54,8 +55,10 @@ The chapters for this repository are ordered as follows: 1) an introduction to s
 ## [Neural Network and Convolutional Neural Networks](<LR|NN|CNN -- Audio Classification.ipynb>)
 
 ## [Forward Propagation Physics Informed Neural Network](PINNs_forward.ipynb)
+Solve the wave equation using Physics Informed Neural Networks (forward problem). 
 
 ## [Inverse Propagation Physics Informed Neural Network](PINNs_inverse.ipynb)
+Estimate the wave speed using Physics Informed Neural Networks (inverse problem).
 
 # Chapter 6 - Explainable AI
 ## [Interpreting Models](<Explainable AI.ipynb>)
