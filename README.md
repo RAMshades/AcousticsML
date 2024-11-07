@@ -23,51 +23,55 @@ In addition to packages described in the .yml file, you will also need to instal
 For a few of the notebooks, you will also need to install the pyroomacoustics package seen [Here](https://github.com/LCAV/pyroomacoustics). This can be installed using the following line:
 ```python
 pip install pyroomacoustics
+pip install python-sofa
 ```
 
 # Chapters
 The chapters for this repository are ordered as follows: 1) an introduction to signal processing for acoustics; 2) an initial look into feature extraction and selecting features for machine learning models; 3) unsupervised machine learning approaches; 4) supervised machine learning approaches; 5) deep learning models examples; 6) explainable AI and feature importance.
 
-# Chapter 1 - Signal Processing toward Machine Learning
-## [Introduction to Signal Processing](Introduction_Signal_Processing.ipynb)
+## Chapter 1 - Signal Processing toward Machine Learning
+### [Introduction to Signal Processing](Introduction_Signal_Processing.ipynb)
 Brief overview of signal processing and techniques that are useful for processing acoustic data.
 
-# Chapter 2 - Feature Extraction and Selection
-## [Feature Extraction](FeatureExtraction.ipynb)
+## Chapter 2 - Feature Extraction and Selection
+### [Feature Extraction](FeatureExtraction.ipynb)
 Descriptions of features and an introduction to feature extraction approaches for machine learning.
 
-## [Feature Selection](FeatureSelection.ipynb)
+### [Feature Selection](FeatureSelection.ipynb)
 Feature selection aims to improve complexity of models, reduce training time, or improve performance of machine learning models. This notebook talks through how to perform feature selection through an example of picking out major vs minor chords.
 
-# Chapter 3 - Unsupervised Machine Learning
-## [Unsupervised Approaches](<Unsupervised Learning -- Long Timeseries.ipynb>)
+## Chapter 3 - Unsupervised Machine Learning
+### [Unsupervised Approaches](<Unsupervised Learning -- Long Timeseries.ipynb>)
 Given a long time series, how can we quickly segment frames of a time series to find similarities in the acoustic sound.
 
-## [Principal Component Analysis](<PCA -- Creating Sound.ipynb>)
+### [Principal Component Analysis](<PCA -- Creating Sound.ipynb>)
 Principal component analysis is discussed and demonstrated to construct new guitar sounds through the frequency domain.
 
-## [Dictionary Learning](dictionary_learning.ipynb)
+### [Dictionary Learning](dictionary_learning.ipynb)
 Dictionary Learning for the sparse representation of room impulse responses and bandwidth extension. 
 
-# Chapter 4 - Supervised Machine Learning
-## [Linear Regression](<Linear regression -- Predict the reverberation time.ipynb>)
+## Chapter 4 - Supervised Machine Learning
+### [Linear Regression](<Linear regression -- Predict the reverberation time.ipynb>)
 
-## [Decision Tree and Random Forest](<DT_RF -- Number Identification .ipynb>)
+### [Decision Tree and Random Forest](<DT_RF -- Number Identification .ipynb>)
 Classify AudioMNIST dataset through decision trees and random forests to distinguish numbers from 0 to 9.
 
-# Chapter 5 - Deep Learning
-## [Neural Representation (HRTF)](<Implicit Neural Representation -- HRTF representation learning and interpolation.ipynb>)
+## Chapter 5 - Deep Learning
 
-## [Neural Network and Convolutional Neural Networks](<LR|NN|CNN -- Audio Classification.ipynb>)
+### [Neural Network and Convolutional Neural Networks](<LR|NN|CNN -- Audio Classification.ipynb>)
 
-## [Forward Propagation Physics Informed Neural Network](PINNs_forward.ipynb)
+### [Generative Adversarial Networks (GAN)](<Generative model (Generative Adversarial Network) -- Room Impulse Response Generation.ipynb>)
+
+### [Neural Representation (HRTF)](<Implicit Neural Representation -- HRTF representation learning and interpolation.ipynb>)
+
+### [Forward Propagation Physics Informed Neural Network](PINNs_forward.ipynb)
 Solve the wave equation using Physics Informed Neural Networks (forward problem). 
 
-## [Inverse Propagation Physics Informed Neural Network](PINNs_inverse.ipynb)
+### [Inverse Propagation Physics Informed Neural Network](PINNs_inverse.ipynb)
 Estimate the wave speed using Physics Informed Neural Networks (inverse problem).
 
-# Chapter 6 - Explainable AI
-## [Interpreting Models](<Explainable AI.ipynb>)
+## Chapter 6 - Explainable AI
+### [Interpreting Models](<Explainable AI.ipynb>)
 Explainable AI aims to improve our understanding of how machine learning models learn and the relationships they identify from given features to their outputs. This notebook discusses some current approaches for interpreting machine learning models and their resutls.
 
 ## Reference
