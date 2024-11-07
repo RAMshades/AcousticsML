@@ -12,7 +12,7 @@ or you can manually create an environment and install certain packages. As an ex
 ```python
 conda create -n audioenv
 conda activate audioenv
-conda install -c conda-forge scikit-learn  
+conda install -c conda-forge librosa scikit-learn  
 ```
 
 ## Additional Installation
@@ -30,16 +30,21 @@ The chapters for this repository are ordered as follows: 1) an introduction to s
 
 # Chapter 1 - Signal Processing toward Machine Learning
 ## [Introduction to Signal Processing](Introduction_Signal_Processing.ipynb)
+Brief overview of signal processing and techniques that are useful for processing acoustic data.
 
 # Chapter 2 - Feature Extraction and Selection
 ## [Feature Extraction](FeatureExtraction.ipynb)
+Descriptions of features and an introduction to feature extraction approaches for machine learning.
 
 ## [Feature Selection](FeatureSelection.ipynb)
+Feature selection aims to improve complexity of models, reduce training time, or improve performance of machine learning models. This notebook talks through how to perform feature selection through an example of picking out major vs minor chords.
 
 # Chapter 3 - Unsupervised Machine Learning
 ## [Unsupervised Approaches](<Unsupervised Learning -- Long Timeseries.ipynb>)
+Given a long time series, how can we quickly segment frames of a time series to find similarities in the acoustic sound.
 
 ## [Principal Component Analysis](<PCA -- Creating Sound.ipynb>)
+Principal component analysis is discussed and demonstrated to construct new guitar sounds through the frequency domain.
 
 ## [Dictionary Learning](dictionary_learning.ipynb)
 Dictionary Learning for the sparse representation of room impulse responses and bandwidth extension. 
@@ -48,6 +53,7 @@ Dictionary Learning for the sparse representation of room impulse responses and 
 ## [Linear Regression](<Linear regression -- Predict the reverberation time.ipynb>)
 
 ## [Decision Tree and Random Forest](<DT_RF -- Number Identification .ipynb>)
+Classify AudioMNIST dataset through decision trees and random forests to distinguish numbers from 0 to 9.
 
 # Chapter 5 - Deep Learning
 ## [Neural Representation (HRTF)](<Implicit Neural Representation -- HRTF representation learning and interpolation.ipynb>)
@@ -62,7 +68,7 @@ Estimate the wave speed using Physics Informed Neural Networks (inverse problem)
 
 # Chapter 6 - Explainable AI
 ## [Interpreting Models](<Explainable AI.ipynb>)
-
+Explainable AI aims to improve our understanding of how machine learning models learn and the relationships they identify from given features to their outputs. This notebook discusses some current approaches for interpreting machine learning models and their resutls.
 
 ## Reference
 [PyTorch Tutorial](https://github.com/yunjey/pytorch-tutorial/tree/master)
