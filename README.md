@@ -50,7 +50,7 @@ Principal component analysis is discussed and demonstrated to construct new guit
 ### [Dictionary Learning](dictionary_learning.ipynb)
 Dictionary Learning for the sparse representation of room impulse responses and bandwidth extension. 
 
-## [Autoencoder|Variational Autoencoder](<AE|VAE -- Anomalous Sound Detection.ipynb>)
+### [Autoencoder|Variational Autoencoder](<AE|VAE -- Anomalous Sound Detection.ipynb>)
 
 
 ## Chapter 4 - Supervised Machine Learning
