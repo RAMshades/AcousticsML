@@ -1,4 +1,4 @@
-name: audioenv
+name: audioenv1
 channels:
   - conda-forge
   - defaults
@@ -6,18 +6,18 @@ dependencies:
   - librosa
   - pandas
   - jupyterlab
-  - conda-forge::pipreqs
   - seaborn
   - matplotlib
   - opendatasets
   - pywavelets
   - pyts
-  - conda-forge::opencv
-  - cupy
-  - pacmap
-  - conda-forge::optuna
+  - optuna
   - interpret
-  - pandas-profiling
   - widgetsnbextension
   - ipywidgets
-  - conda-forge::lime
+  - pytorch
+  - pytorch::torchaudio
+  - shap
+  - lime
+  - natsort
+  - pathlib
