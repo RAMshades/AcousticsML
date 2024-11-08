@@ -1,4 +1,4 @@
-name: audioenv1
+name: audioenv
 channels:
   - conda-forge
   - defaults
