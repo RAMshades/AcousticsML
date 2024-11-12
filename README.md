@@ -65,7 +65,7 @@ Classify AudioMNIST dataset through decision trees and random forests to disting
 
 ### [Generative Adversarial Networks (GAN)](<Generative model (Generative Adversarial Network) -- Room Impulse Response Generation.ipynb>)
 
-### [Neural Representation (HRTF)](<Implicit Neural Representation -- HRTF representation learning and interpolation.ipynb>)
+### [Implicit Neural Representation (HRTF)](<Implicit Neural Representation -- HRTF representation learning and interpolation.ipynb>)
 
 ### [Forward Propagation Physics Informed Neural Network](PINNs_forward.ipynb)
 Solve the wave equation using Physics Informed Neural Networks (forward problem). 
