@@ -58,7 +58,7 @@ Principal component analysis is discussed and demonstrated to construct new guit
 Dictionary Learning for the sparse representation of room impulse responses and bandwidth extension. 
 
 ### [Autoencoder|Variational Autoencoder](<AE|VAE -- Anomalous Sound Detection.ipynb>)
-
+Autoencoder and VAE for machine sound anomaly detection.
 
 ## Chapter 4 - Supervised Machine Learning
 ### [Linear Regression](<Linear regression -- Predict the reverberation time.ipynb>)
@@ -69,10 +69,13 @@ Classify AudioMNIST dataset through decision trees and random forests to disting
 ## Chapter 5 - Deep Learning
 
 ### [Neural Network and Convolutional Neural Networks](<LR|NN|CNN -- Audio Classification.ipynb>)
+Targeting audio classification problem, we introduce the classical logistic regression approach and basics of deep learning with a simple neural network and a convolutional neural network.
 
 ### [Generative Adversarial Networks (GAN)](<Generative model (Generative Adversarial Network) -- Room Impulse Response Generation.ipynb>)
+Generative Adversarial Network for generating room impulse responses (RIRs).
 
-### [Implicit Neural Representation (HRTF)](<Implicit Neural Representation -- HRTF representation learning and interpolation.ipynb>)
+### [Implicit Neural Representation](<Implicit Neural Representation -- HRTF representation learning and interpolation.ipynb>)
+Implicit Neural Representation for representing personalized Head-Related Transfer Function (HRTF). 
 
 ### [Forward Propagation Physics Informed Neural Network](PINNs_forward.ipynb)
 Solve the wave equation using Physics Informed Neural Networks (forward problem). 
