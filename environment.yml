@@ -24,3 +24,4 @@ dependencies:
   - pathlib
   - pip:
     - pyroomacoustics
+    - python-sofa
