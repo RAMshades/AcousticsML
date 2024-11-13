@@ -19,5 +19,8 @@ dependencies:
   - pytorch::torchaudio
   - shap
   - lime
+  - pip
   - natsort
   - pathlib
+  - pip:
+    - pyroomacoustics
