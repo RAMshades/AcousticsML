@@ -37,7 +37,7 @@ A few of the datasets used in the notebooks require downloading data from the pl
 The chapters for this repository are ordered as follows: 1) an introduction to signal processing for acoustics; 2) an initial look into feature extraction and selecting features for machine learning models; 3) unsupervised machine learning approaches; 4) supervised machine learning approaches; 5) deep learning models examples; 6) explainable AI and feature importance.
 
 ## Chapter 1 - Signal Processing toward Machine Learning
-### 1.1 [Introduction to Signal Processing](Introduction_Signal_Processing.ipynb)
+### 1.1 [Introduction to Signal Processing](1_1_Introduction_Signal_Processing.ipynb)
 Brief overview of signal processing and techniques that are useful for processing acoustic data.
 
 ## Chapter 2 - Feature Extraction and Selection
