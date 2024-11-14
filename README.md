@@ -62,6 +62,7 @@ Autoencoder and VAE for machine sound anomaly detection.
 
 ## Chapter 4 - Supervised Machine Learning
 ### [Linear Regression](<Linear regression -- Predict the reverberation time.ipynb>)
+Linear regression for the use case of predicting the room reverberation time.
 
 ### [Decision Tree and Random Forest](<DT_RF -- Number Identification .ipynb>)
 Classify AudioMNIST dataset through decision trees and random forests to distinguish numbers from 0 to 9.
