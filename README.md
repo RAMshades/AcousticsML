@@ -41,54 +41,55 @@ The chapters for this repository are ordered as follows: 1) an introduction to s
 Brief overview of signal processing and techniques that are useful for processing acoustic data.
 
 ## Chapter 2 - Feature Extraction and Selection
-### [Feature Extraction](FeatureExtraction.ipynb)
+### 2.1 [Feature Extraction](FeatureExtraction.ipynb)
 Descriptions of features and an introduction to feature extraction approaches for machine learning.
 
-### [Feature Selection](FeatureSelection.ipynb)
+### 2.2 [Feature Selection](FeatureSelection.ipynb)
 Feature selection aims to improve complexity of models, reduce training time, or improve performance of machine learning models. This notebook talks through how to perform feature selection through an example of picking out major vs minor chords.
 
 ## Chapter 3 - Unsupervised Machine Learning
-### [Unsupervised Approaches](<Unsupervised Learning -- Long Timeseries.ipynb>)
+### 3.1 [Unsupervised Approaches](<Unsupervised Learning -- Long Timeseries.ipynb>)
 Given a long time series, how can we quickly segment frames of a time series to find similarities in the acoustic sound.
 
-### [Principal Component Analysis](<PCA -- Creating Sound.ipynb>)
+### 3.2 [Principal Component Analysis](<PCA -- Creating Sound.ipynb>)
 Principal component analysis is discussed and demonstrated to construct new guitar sounds through the frequency domain.
 
-### [Dictionary Learning](dictionary_learning.ipynb)
+### 3.3 [Dictionary Learning](dictionary_learning.ipynb)
 Dictionary Learning for the sparse representation of room impulse responses and bandwidth extension. 
 
-### [Autoencoder|Variational Autoencoder](<AE|VAE -- Anomalous Sound Detection.ipynb>)
+### 3.4 [Autoencoder|Variational Autoencoder](<AE|VAE -- Anomalous Sound Detection.ipynb>)
 Autoencoder and VAE for machine sound anomaly detection.
 
 ## Chapter 4 - Supervised Machine Learning
-### [Linear Regression](<Linear regression -- Predict the reverberation time.ipynb>)
+### 4.1 [Linear Regression](<Linear regression -- Predict the reverberation time.ipynb>)
 Linear regression for the use case of predicting the room reverberation time.
 
-### [Decision Tree and Random Forest](<DT_RF -- Number Identification .ipynb>)
+### 4.2 [Decision Tree and Random Forest](<DT_RF -- Number Identification .ipynb>)
 Classify AudioMNIST dataset through decision trees and random forests to distinguish numbers from 0 to 9.
 
 ## Chapter 5 - Deep Learning
 
-### [Neural Network and Convolutional Neural Networks](<LR|NN|CNN -- Audio Classification.ipynb>)
+### 5.1 [Neural Network and Convolutional Neural Networks](<LR|NN|CNN -- Audio Classification.ipynb>)
 Targeting audio classification problem, we introduce the classical logistic regression approach and basics of deep learning with a simple neural network and a convolutional neural network.
 
-### [Generative Adversarial Networks (GAN)](<Generative model (Generative Adversarial Network) -- Room Impulse Response Generation.ipynb>)
+### 5.2 [Generative Adversarial Networks (GAN)](<Generative model (Generative Adversarial Network) -- Room Impulse Response Generation.ipynb>)
 Generative Adversarial Network for generating room impulse responses (RIRs).
 
-### [Implicit Neural Representation](<Implicit Neural Representation -- HRTF representation learning and interpolation.ipynb>)
+### 5.3 [Implicit Neural Representation](<Implicit Neural Representation -- HRTF representation learning and interpolation.ipynb>)
 Implicit Neural Representation for representing personalized Head-Related Transfer Function (HRTF). 
 
-### [Forward Propagation Physics Informed Neural Network](PINNs_forward.ipynb)
+### 5.4 [Forward Propagation Physics Informed Neural Network](PINNs_forward.ipynb)
 Solve the wave equation using Physics Informed Neural Networks (forward problem). 
 
-### [Inverse Propagation Physics Informed Neural Network](PINNs_inverse.ipynb)
+### 5.5 [Inverse Propagation Physics Informed Neural Network](PINNs_inverse.ipynb)
 Estimate the wave speed using Physics Informed Neural Networks (inverse problem).
 
 ## Chapter 6 - Explainable AI
-### [Interpreting Models](<Explainable AI.ipynb>)
+### 6.1 [Interpreting Models](<Explainable AI.ipynb>)
 Explainable AI aims to improve our understanding of how machine learning models learn and the relationships they identify from given features to their outputs. This notebook discusses some current approaches for interpreting machine learning models and their resutls.
 
 ## Reference
 [PyTorch Tutorial](https://github.com/yunjey/pytorch-tutorial/tree/master)
+
 OpenAI. (2024). ChatGPT - Image Generator by Naif J Alotaibi (Nov. 12 2024)[Large language model]. https://chat.openai.com/chat 
 
