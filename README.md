@@ -30,7 +30,7 @@ pip install pyroomacoustics
 pip install python-sofa
 ```
 ### Kaggle Datasets
-A few of the datasets used in the notebooks require downloading data from the platform [Kaggle](https://www.kaggle.com/). If you do not have an account, please register for an account. Once logged in go to your profile icon in the top right, select settings, and scroll down to API. Please select create a new token and a file "kaggle.json" will download. Place this key within this downloaded directory that contains the Jupyter notebooks above. This API key will grant access for the opendatasets package to download the data (seen in the Jupyter notebooks). Data downloaded through opendatasets can be downloaded once into your directory and will not duplicate a download unless forced. 
+A few of the datasets used in the notebooks require downloading data from the platform [Kaggle](https://www.kaggle.com/). If you do not have an account, please register for an account. Once logged in go to your profile icon in the top right, select settings, and scroll down to API. Please select create a new token and a file "kaggle.json" will download. Place this file within this downloaded directory that contains the Jupyter notebooks above. This API key will grant access for the opendatasets package to download the data (seen in the Jupyter notebooks). Data downloaded through opendatasets can be downloaded once into your directory and will not duplicate a download unless forced. 
 
 
 # Chapters
