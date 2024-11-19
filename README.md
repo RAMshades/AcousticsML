@@ -8,14 +8,14 @@ Acoustic data provide scientific and engineering insights in fields ranging from
 
 # Installation 
 ## Option 1
-#### Environment Installation
+### Environment Installation
 In order to follow along the examples, you will need to download Anaconda and Python. We have provided a brief outline on how to install Anaconda in [Installation Guide](Python_Installation_instructions.pdf). Once Anaconda has been installed, we will need to create a new environment from the one provided in the .yml file. This can be done in the conda terminal as: 
 ```python
 conda env create -f environment.yml
 ```
 
 ## Option 2
-#### Anaconda Command Line
+### Anaconda Command Line
 or you can manually create an environment and install certain packages. As an example:
 
 ```python
