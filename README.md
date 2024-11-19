@@ -24,11 +24,11 @@ conda activate audioenv
 conda install -c conda-forge librosa scikit-learn pandas jupyterlab seaborn matplotlib opendatasets pywavelets pyts optuna widgetsnbextension ipywidgets shap lime requests natsort pathlib pip
 ```
 
-## Additional Installation
-### Pytorch
+### Additional Installation (for option 2)
+#### Pytorch
 In addition to packages described in the .yml file, you can install PyTorch, Torchvision, TorchAudio for GPU. This can be done by going to [This Website](https://pytorch.org/get-started/locally/) to find the correct package to install. 
 
-### PyRoomAcoustics
+#### PyRoomAcoustics
 For a few of the notebooks, you will also need to install the pyroomacoustics package seen [Here](https://github.com/LCAV/pyroomacoustics). This can be installed using the following line:
 ```python
 pip install pyroomacoustics
