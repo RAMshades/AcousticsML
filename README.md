@@ -87,8 +87,14 @@ Solve the wave equation using Physics Informed Neural Networks (forward problem)
 Estimate the wave speed using Physics Informed Neural Networks (inverse problem).
 
 ## Chapter 6 - Explainable AI
-### 6.1 [Interpreting Models](6_1_Explainable_AI.ipynb)
-Explainable AI aims to improve our understanding of how machine learning models learn and the relationships they identify from given features to their outputs. This notebook discusses some current approaches for interpreting machine learning models and their resutls.
+### 6.1 [Unsupervised Models](6_1_ExplainableAI-Unsupervised.ipynb)
+Identify number of clusters using a variety of techniques and interpret the clustering of the feature space.
+
+### 6.2 [Supervised Models](6_2_ExplainableAI-Supervised.ipynb)
+Determine features importance for supervised models and evaluate performance to determine where pitfalls may occur.
+
+### 6.3 [Deep Learning](6_3_ExplainableAI-DeepLearning.ipynb)
+Visualize key distinctions in model activations for given inputs and evaluate how deep learning model's interpret observe and interpret data.
 
 ## Reference
 [PyTorch Tutorial](https://github.com/yunjey/pytorch-tutorial/tree/master)
