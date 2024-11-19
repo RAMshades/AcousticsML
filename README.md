@@ -2,7 +2,7 @@
 Logo | created by ChatGPT
 
 # Tutorial: Machine Learning for Acoustics
-## By: Ryan A. McCarthy, Neil Zhang, Samuel Verburg, and Peter Gerstoft
+### By: Ryan A. McCarthy, Neil Zhang, Samuel Verburg, and Peter Gerstoft
 
 Acoustic data provide scientific and engineering insights in fields ranging from biology and communications to ocean and Earth science. We survey the recent advances and transformative potential of machine learning (ML), including deep learning, in the field of acoustics. ML is a broad family of techniques, which are often based in statistics, for automatically detecting and utilizing patterns in data. We have ML examples from ocean acoustics, room acoustics, and personalized spatial audio. For room acoustics, we take room impulse responses (RIR) generation as an example application. For personalized spatial audio, we take head-realted transfer function (HRTF) upsampling as examples. This tutorial covers a wide range of machine learning approaches for acoustic applications including supervised, unsupervised, and deep learning. Although this notebook doesn't cover all the topics, it provides an initial look into applying machine learning for acoustics research.
 
