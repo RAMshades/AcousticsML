@@ -18,7 +18,7 @@ or you can manually create an environment and install certain packages. As an ex
 ```python
 conda create -n audioenv
 conda activate audioenv
-conda install -c conda-forge librosa scikit-learn  
+conda install -c conda-forge librosa scikit-learn pandas jupyterlab seaborn matplotlib opendatasets pywavelets pyts optuna widgetsnbextension ipywidgets shap lime requests natsort pathlib pip
 ```
 
 ## Additional Installation
