@@ -12,7 +12,6 @@ dependencies:
   - pywavelets
   - pyts
   - optuna
-  - interpret
   - widgetsnbextension
   - ipywidgets
   - pytorch
