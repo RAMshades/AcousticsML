@@ -102,5 +102,4 @@ Visualize key distinctions in model activations for given inputs and evaluate ho
 ## Reference
 [PyTorch Tutorial](https://github.com/yunjey/pytorch-tutorial/tree/master)
 
-OpenAI. (2024). ChatGPT - Image Generator by Naif J Alotaibi (Nov. 12 2024)[Large language model]. https://chat.openai.com/chat 
-
+[Sklearn Tutorial](https://scikit-learn.org/stable/user_guide.html)
