@@ -4,12 +4,12 @@ Logo | created by ChatGPT
 # Tutorial: Machine Learning for Acoustics
 ### By: Ryan A. McCarthy, Neil Zhang, Samuel Verburg, and Peter Gerstoft
 
-Acoustic data provide scientific and engineering insights in fields ranging from biology and communications to ocean and Earth science. We survey the recent advances and transformative potential of machine learning (ML), including deep learning, in the field of acoustics. ML is a broad family of techniques, which are often based in statistics, for automatically detecting and utilizing patterns in data. We have ML examples from ocean acoustics, room acoustics, and personalized spatial audio. For room acoustics, we take room impulse responses (RIR) generation as an example application. For personalized spatial audio, we take head-realted transfer function (HRTF) upsampling as examples. This tutorial covers a wide range of machine learning approaches for acoustic applications including supervised, unsupervised, and deep learning. Although this notebook doesn't cover all the topics, it provides an initial look into applying machine learning for acoustics research.
+Acoustic data provide scientific and engineering insights in fields ranging from biology and communications to ocean and Earth science. We survey the recent advances and transformative potential of machine learning (ML), including deep learning, in the field of acoustics. ML is a broad family of techniques, often based on statistics, for automatically detecting and utilizing patterns in data. We have ML examples from ocean acoustics, room acoustics, and personalized spatial audio. For room acoustics, we take room impulse responses (RIR) generation as an example application. For personalized spatial audio, we take head-related transfer function (HRTF) upsampling as an example. This tutorial covers various machine learning approaches for acoustic applications including supervised, unsupervised, and deep learning. Although this notebook doesn't cover all the topics, it provides an initial look into applying machine learning for acoustics research.
 
 # Installation 
 ## Option 1
 ### Environment Installation
-In order to follow along the examples, you will need to download Anaconda and Python. We have provided a brief outline on how to install Anaconda in [Installation Guide](Python_Installation_instructions.pdf). Once Anaconda has been installed, we will need to create a new environment from the one provided in the .yml file. This can be done in the conda terminal as: 
+To follow the examples, you will need to download Anaconda and Python. We have provided a brief outline on installing Anaconda in [Installation Guide](Python_Installation_instructions.pdf). Once Anaconda has been installed, we will need to create a new environment from the one provided in the .yml file. This can be done in the conda terminal as: 
 ```python
 conda env create -f environment.yml
 ```
@@ -26,7 +26,7 @@ conda install -c conda-forge librosa scikit-learn pandas jupyterlab seaborn matp
 
 ### Additional Installation (for option 2)
 #### Pytorch
-In addition to packages described in the .yml file, you can install PyTorch, Torchvision, TorchAudio for GPU. This can be done by going to [This Website](https://pytorch.org/get-started/locally/) to find the correct package to install. 
+In addition to the packages described in the .yml file, you can install PyTorch, Torchvision, and TorchAudio for GPU. This can be done by going to [This Website](https://pytorch.org/get-started/locally/) to find the correct package to install. 
 
 #### PyRoomAcoustics
 For a few of the notebooks, you will also need to install the pyroomacoustics package seen [Here](https://github.com/LCAV/pyroomacoustics). This can be installed using the following line:
@@ -35,7 +35,7 @@ pip install pyroomacoustics
 pip install python-sofa
 ```
 # Kaggle Datasets
-A few of the datasets used in the notebooks require downloading data from the platform [Kaggle](https://www.kaggle.com/). If you do not have an account, please register for an account. Once logged in go to your profile icon in the top right, select settings, and scroll down to API. Please select create a new token and a file "kaggle.json" will download. Place this file within this downloaded directory that contains the Jupyter notebooks above. This API key will grant access for the opendatasets package to download the data (seen in the Jupyter notebooks). Data downloaded through opendatasets can be downloaded once into your directory and will not duplicate a download unless forced. 
+A few of the datasets used in the notebooks require downloading data from the platform [Kaggle](https://www.kaggle.com/). If you do not have an account, please register for an account. Once logged in go to your profile icon in the top right, select settings, and scroll down to API. Please select Create a new token and a file "kaggle.json" will download. Place this file within this downloaded directory that contains the Jupyter notebooks above. This API key will grant access to the open datasets package to download the data (seen in the Jupyter notebooks). Data downloaded through open datasets can be downloaded once into your directory and will not duplicate a download unless forced. 
 
 
 # Chapters
@@ -43,14 +43,14 @@ The chapters for this repository are ordered as follows: 1) an introduction to s
 
 ## Chapter 1 - Signal Processing toward Machine Learning
 ### 1.1 [Introduction to Signal Processing](1_1_Introduction_Signal_Processing.ipynb)
-Brief overview of signal processing and techniques that are useful for processing acoustic data.
+A brief overview of signal processing and techniques useful for processing acoustic data.
 
 ## Chapter 2 - Feature Extraction and Selection
 ### 2.1 [Feature Extraction](2_1_FeatureExtraction.ipynb)
 Descriptions of features and an introduction to feature extraction approaches for machine learning.
 
 ### 2.2 [Feature Selection](2_2_FeatureSelection.ipynb)
-Feature selection aims to improve complexity of models, reduce training time, or improve performance of machine learning models. This notebook talks through how to perform feature selection through an example of picking out major vs minor chords.
+Feature selection aims to improve the complexity of models, reduce training time, or improve the performance of machine learning models. This notebook talks about how to perform feature selection through an example of picking out major vs minor chords.
 
 ## Chapter 3 - Unsupervised Machine Learning
 ### 3.1 [Unsupervised Approaches](3_1_Unsupervised_Learning--Long_Timeseries.ipynb)
@@ -97,7 +97,7 @@ Identify number of clusters using a variety of techniques and interpret the clus
 Determine features importance for supervised models and evaluate performance to determine where pitfalls may occur.
 
 ### 6.3 [Deep Learning](6_3_ExplainableAI-DeepLearning.ipynb)
-Visualize key distinctions in model activations for given inputs and evaluate how deep learning model's interpret observe and interpret data.
+Visualize key distinctions in model activations for given inputs and evaluate how deep learning models interpret observe and interpret data.
 
 ## Reference
 [PyTorch Tutorial](https://github.com/yunjey/pytorch-tutorial/tree/master)
