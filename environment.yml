@@ -3,25 +3,28 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - librosa
-  - pandas
-  - jupyterlab
-  - seaborn
-  - matplotlib
-  - opendatasets
-  - pywavelets
-  - pyts
-  - optuna
-  - widgetsnbextension
   - ipywidgets
-  - pytorch
-  - pytorch::torchaudio
-  - shap
+  - jupyterlab
+  - librosa
   - lime
-  - pip
-  - requests
+  - matplotlib
   - natsort
+  - numpy
+  - opendatasets
+  - optuna
+  - pandas
+  - pip
+  - pyts
+  - pywavelets
+  - requests
+  - seaborn
+  - shap
+  - tqdm
+  - widgetsnbextension
   - pathlib
   - pip:
     - pyroomacoustics
     - python-sofa
+    - soundfile
+    - torch
+    - torchaudio
