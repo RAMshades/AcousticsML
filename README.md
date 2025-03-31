@@ -92,9 +92,6 @@ Solve the wave equation using Physics Informed Neural Networks (forward problem)
 ### 5.5 [Inverse Propagation Physics Informed Neural Network](5_5_PINNs_inverse.ipynb)
 Estimate the wave speed using Physics Informed Neural Networks (inverse problem).
 
-### 5.6 [Dimension Reduction through Autoencoders](5_6_DimReduction-Clustering.ipynb)
-
-
 ## Chapter 6 - Explainable AI
 ### 6.1 [Unsupervised Models](6_1_ExplainableAI-Unsupervised.ipynb)
 Identify number of clusters using a variety of techniques and interpret the clustering of the feature space.
