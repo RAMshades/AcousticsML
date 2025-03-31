@@ -65,6 +65,9 @@ Dictionary Learning for the sparse representation of room impulse responses and 
 ### 3.4 [Autoencoder|Variational Autoencoder](3_4_AE_VAE--Anomalous_Sound_Detection.ipynb)
 Autoencoder and VAE for machine sound anomaly detection.
 
+### 3.5 [Dimensionality Reduction and Clustering](3_5_DimReduction-Clustering.ipynb)
+Reduce the dimensionality of audio data and cluster the results.
+
 ## Chapter 4 - Supervised Machine Learning
 ### 4.1 [Linear Regression](4_1_Linear_Regression--Predict_Reverberation_time.ipynb)
 Linear regression for the use case of predicting the room reverberation time.
