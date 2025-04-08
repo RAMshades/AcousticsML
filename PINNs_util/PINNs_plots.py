@@ -100,3 +100,61 @@ def plot_speed_log(c_hist, c_ref, L):
         ani = animation.ArtistAnimation(fig, frames, interval=200, blit=True)
     plt.close()
     return ani
+
+def plot_comparison(p_ref, p_est, L, T, t):
+    n_L = p_ref.shape[0]
+    n_T = p_ref.shape[-1]
+    p_est = p_est.reshape(n_L, n_L, n_T)
+    p_ref_max = np.max(p_ref)
+    p_ref_min = -p_ref_max
+
+    time_indices = [0, int(n_T * 0.33), int(n_T * 0.66), n_T - 1]
+    time_labels = [t[idx]*5/3 for idx in time_indices]
+
+    fig, axes = plt.subplots(2, 6, figsize=(22, 10), gridspec_kw={'width_ratios': [0.2, 1, 1, 1, 1, 0.2]})
+
+    axes[0, 0].text(0.5, 0.5, 'Reference', fontsize=24, ha='center', va='center', rotation=0)
+    axes[1, 0].text(0.5, 0.5, 'PINN', fontsize=24, ha='center', va='center', rotation=0)
+
+    for ax in axes[:, 0]:
+        ax.set_xticks([])
+        ax.set_yticks([])
+        ax.spines['top'].set_visible(False)
+        ax.spines['right'].set_visible(False)
+        ax.spines['bottom'].set_visible(False)
+        ax.spines['left'].set_visible(False)
+
+    for ax in axes[:, -1]:
+        ax.set_xticks([])
+        ax.set_yticks([])
+        ax.spines['top'].set_visible(False)
+        ax.spines['right'].set_visible(False)
+        ax.spines['bottom'].set_visible(False)
+        ax.spines['left'].set_visible(False)
+
+    for i, idx in enumerate(time_indices):
+        ax = axes[0, i + 1]
+        im = ax.imshow(p_ref[:, :, idx], extent=[0, 5, 0, 5], origin='lower', cmap='seismic', vmin=p_ref_min, vmax=p_ref_max)
+        ax.set_title(f"t={time_labels[i]:.2f} s", fontsize=22)
+        ax.set_xlabel('x (km)', fontsize=20)
+        ax.set_ylabel('y (km)', fontsize=20)
+
+    for i, idx in enumerate(time_indices):
+        ax = axes[1, i + 1]
+        im = ax.imshow(p_est[:, :, idx], extent=[0, 5, 0, 5], origin='lower', cmap='seismic', vmin=p_ref_min, vmax=p_ref_max)
+        ax.set_xlabel('x (km)', fontsize=20)
+        ax.set_ylabel('y (km)', fontsize=20)
+
+    cbar_ax = fig.add_axes([0.94, 0.15, 0.02, 0.7]) 
+    cbar = fig.colorbar(im, cax=cbar_ax)
+    cbar.set_label('Normalized pressure', fontsize=24)
+    cbar.ax.tick_params(labelsize=20) 
+
+    for ax in axes[0, 1:]:
+        ax.tick_params(axis='both', which='major', labelsize=20)
+
+    for ax in axes[1, 1:]:
+        ax.tick_params(axis='both', which='major', labelsize=20)
+
+    plt.tight_layout()
+    plt.show()
