@@ -28,3 +28,4 @@ dependencies:
     - soundfile
     - torch
     - torchaudio
+    - torchvision
