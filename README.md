@@ -106,3 +106,24 @@ Visualize key distinctions in model activations for given inputs and evaluate ho
 [PyTorch Tutorial](https://github.com/yunjey/pytorch-tutorial/tree/master)
 
 [Sklearn Tutorial](https://scikit-learn.org/stable/user_guide.html)
+
+## Citation
+To learn more and to cite this work, please find the citation below:
+```
+McCarthy, R.A., Zhang, Y., Verburg, S.A. et al. Machine Learning in Acoustics: A Review and Open-source Repository. npj Acoust. 1, 18 (2025). https://doi.org/10.1038/s44384-025-00021-w
+```
+```
+﻿@Article{McCarthy2025,
+author={McCarthy, Ryan A. and Zhang, You and Verburg, Samuel A. and Jenkins, William F. and Gerstoft, Peter},
+title={Machine Learning in Acoustics: A Review and Open-source Repository},
+journal={npj Acoustics},
+year={2025},
+month={Sep},
+day={09},
+volume={1},
+number={1},
+pages={18},
+doi={10.1038/s44384-025-00021-w},
+url={https://doi.org/10.1038/s44384-025-00021-w}
+}
+```
