@@ -108,7 +108,7 @@ Visualize key distinctions in model activations for given inputs and evaluate ho
 [Sklearn Tutorial](https://scikit-learn.org/stable/user_guide.html)
 
 ## Citation
-To learn more, please find our paper [here](https://www.nature.com/articles/s44384-025-00021-w), [here](https://arxiv.org/abs/2507.04419), or on Github [here](https://github.com/RAMshades/AcousticsML/blob/main/ML_Acoustics_paper.pdf). To cite this work, please see the citation below:
+To learn more, please find our paper in npj acoustics [here](https://www.nature.com/articles/s44384-025-00021-w), on arxiv [here](https://arxiv.org/abs/2507.04419), or on Github [here](https://github.com/RAMshades/AcousticsML/blob/main/ML_Acoustics_paper.pdf). To cite this work, please see the citation below:
 ```
 McCarthy, R.A., Zhang, Y., Verburg, S.A. et al. Machine Learning in Acoustics: A Review and Open-source Repository. npj Acoust. 1, 18 (2025). https://doi.org/10.1038/s44384-025-00021-w
 ```
